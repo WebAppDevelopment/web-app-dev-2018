@@ -120,6 +120,10 @@ body
   </header>
   <div class="right tab-menu menu">
     
+    <a class="item" data-tab="Lab-01b Semantic UI">
+      Lab-01b Semantic UI
+    </a>
+    
     <a class="item" data-tab="Lab-02b Semantic UI">
       Lab-02b Semantic UI
     </a>
@@ -164,6 +168,10 @@ body
       10
     </a>
     
+    <a class="item" data-tab="Exercise">
+      Exercise
+    </a>
+    
     <a class="item" data-tab="Exercises">
       Exercises
     </a>
@@ -179,13 +187,13 @@ body
     
       
         <a class="item" href="../../topic-01-css-frameworks/book-a/index.html">
-          Lab-02a Semantic UI
+          Lab-01a Semantic UI
         </a>
       
     
       
         <a class="item" href="../../topic-01-css-frameworks/book-b/index.html">
-          Lab-02b Semantic UI
+          Lab-01b Semantic UI
         </a>
       
     
@@ -194,6 +202,12 @@ body
     <div class="ui basic segment" id="labchat">
       <br>
       
+      <div  class="ui tab segment lab" data-tab="Lab-01b Semantic UI">
+        <h1>Objectives</h1>
+<p>Continue to enhance the web site with additional Semantic-UI styles &amp; Components</p>
+
+      </div>
+     
       <div  class="ui tab segment lab" data-tab="Lab-02b Semantic UI">
         <h1>Objectives</h1>
 <p>Continue to enhance the IoT web site with additional Semantic-UI styles &amp; Components</p>
@@ -204,16 +218,16 @@ body
         <h1>Setup</h1>
 <p>This lab assumes you have completed the last lab - an archive of the completed project can be found here:</p>
 <ul>
-<li><a href="https://github.com/wit-computing/iot-web/releases/tag/Lab05a">https://github.com/wit-computing/iot-web/releases/tag/Lab05a</a></li>
+<li><a href="archives/Lab01b.zip">Lab01b</a></li>
 </ul>
-<p>The home page looks something like this:</p>
+<p>In this lab we will further enhance the prpject so that the home page looks something like this:</p>
 <p><img src="img/03.png" alt=""></p>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="02">
         <h1>Icons</h1>
-<p>We left the footer from last week looking like this:</p>
+<p>We left the footer from the last practical looking like this:</p>
 <p><img src="img/01.png" alt=""></p>
 <p>with the task of making it look like this:</p>
 <p><img src="img/05.png" alt=""></p>
@@ -235,6 +249,7 @@ body
   &lt;a href=&quot;href=&#39;http://twitter.com/ComputingAtWIT&quot;&gt; &lt;i class=&quot;large twitter icon&quot;&gt;&lt;/i&gt; &lt;/a&gt;
   &lt;a href=&quot;href=&#39;http://www.linkedin.com/pub/computing-at-wit&quot;&gt;  &lt;i class=&quot;large linkedin icon&quot;&gt;&lt;/i&gt; &lt;/a&gt;
 &lt;/footer&gt;</code></pre>
+<p><strong>Note:</strong> Do this for all the strand pages also.</p>
 
       </div>
      
@@ -341,7 +356,8 @@ body
     &lt;/article&gt;
 ...</code></pre>
 <p>Try this now, the icons should appear on the programming strand + the &#39;sign in&#39; icon should be a link to the programming strand page.</p>
-<p>We might like to have the icons better spaced - in two columns perhaps. This can easily be done sing the grid mechanism we used for the header. Here is an alternative version:</p>
+<p>We might like to have the icons better spaced - in two columns perhaps. This can easily be done using the grid mechanism we used for the header. 
+Here is an alternative version:</p>
 <pre><code>...
   &lt;article class=&quot;red column&quot;&gt;
     &lt;h2&gt; Programming &lt;/h2&gt;
@@ -443,7 +459,7 @@ body
         &lt;i class=&quot;huge lab icon&quot;&gt;&lt;/i&gt;
       &lt;/div&gt;
       &lt;div class=&quot;right aligned column&quot;&gt;
-        &lt;a href=&quot;strands/maths.html&quot;&gt;
+        &lt;a href=&quot;strands/project.html&quot;&gt;
           &lt;i class=&quot;huge sign in icon&quot;&gt;&lt;/i&gt;
         &lt;/a&gt;
       &lt;/div&gt;
@@ -460,7 +476,7 @@ body
         &lt;i class=&quot;huge wizard icon&quot;&gt;&lt;/i&gt;
       &lt;/div&gt;
       &lt;div class=&quot;right aligned column&quot;&gt;
-        &lt;a href=&quot;strands/programming.html&quot;&gt;
+        &lt;a href=&quot;strands/maths.html&quot;&gt;
           &lt;i class=&quot;huge sign in icon&quot;&gt;&lt;/i&gt;
         &lt;/a&gt;
       &lt;/div&gt;
@@ -498,7 +514,7 @@ body
 <p><img src="img/18.png" alt=""></p>
 <p>The images are not sized correctly, and the text is not flowing well. This is how we would like it to look:</p>
 <p><img src="img/19.png" alt=""></p>
-<p>This is the current main content of programming.html (ignoring head, headder and footer for the moment):</p>
+<p>This is the current main content of programming.html (ignoring head, header and footer for the moment):</p>
 <pre><code> &lt;section class=&quot;ui segment&quot;&gt;
     &lt;article&gt;
       &lt;h1&gt; Programming &lt;/h1&gt;
@@ -542,7 +558,7 @@ body
       &lt;/p&gt;
     &lt;/article&gt;
   &lt;/section&gt;</code></pre>
-<p>... we have made the main section a <code>grid</code> segment.</p>
+<p>... we have made the main section a <strong>grid</strong> segment.</p>
 <p>We can then rework the internals to use the grid model:</p>
 <pre><code>  &lt;section class=&quot;ui grid segment&quot;&gt;
 
@@ -590,7 +606,7 @@ body
 <p><img src="img/20.png" alt=""></p>
 <p>The text is not really legible - and is too wide to read. This is what we would like to have:</p>
 <p><img src="img/22.png" alt=""></p>
-<p>Notice how the images is stretched to the edges.</p>
+<p>Notice how the image is stretched to the edges.</p>
 <p>The first step will be to rework the index.html page to have the image adjusted to the full width of the page:</p>
 <pre><code>&lt;body&gt;
   &lt;section class=&quot;ui container&quot;&gt;
@@ -611,7 +627,7 @@ body
     footer sections.
   &lt;/section&gt;
 &lt;/body&gt;</code></pre>
-<p>In the above adjustments, we have excluded the <code>banner</code> section from the container class - which achieves the desired effect. Try it out now. Background image should stretch to the limit of the viewport, whereas the rest of the segments have appropriate margins left and right.</p>
+<p>In the above adjustments, we have excluded the <strong>banner</strong> section from the container class - which achieves the desired effect. Try it out now. Background image should stretch to the limit of the viewport, whereas the rest of the segments have appropriate margins left and right.</p>
 <p>If you are having difficulty, here is the complete <code>&lt;body&gt;</code> element from the home page:</p>
 <pre><code>&lt;body&gt;
 
@@ -804,11 +820,11 @@ body
 <ul>
 <li><a href="http://semantic-ui.com/collections/grid.html">http://semantic-ui.com/collections/grid.html</a></li>
 </ul>
-<p>Particularly the <code>Responsive Grids</code> - and <code>Stackable</code> grids in particular:</p>
+<p>Particularly the <em>Responsive Grids</em> - and <em>Stackable</em> grids in particular:</p>
 <ul>
 <li><a href="http://semantic-ui.com/collections/grid.html#stackable">http://semantic-ui.com/collections/grid.html#stackable</a></li>
 </ul>
-<p>Back to the curriculum section of the home page - adjust the enclosing <code>&lt;section&gt;</code> with a new class - <code>stackable</code>:</p>
+<p>Back to the curriculum section of the home page - adjust the enclosing <code>&lt;section&gt;</code> with a new class - <strong>stackable</strong>:</p>
 <pre><code>&lt;section class=&quot;ui three column padded stacked stackable grid segment&quot;&gt;</code></pre>
 <p>Immediately the grid becomes more readable:</p>
 <p><img src="img/25.png" alt=""></p>
@@ -821,7 +837,7 @@ body
      
       <div  class="ui tab segment lab" data-tab="09">
         <h1>Layout</h1>
-<p>Using the same <code>stackable</code> property - make all the strand pages use stackable segments. They should start to look like this:</p>
+<p>Using the same <strong>stackable</strong> property - make all the strand pages use stackable segments. They should start to look like this:</p>
 <h1>#</h1>
 <p><img src="img/28.png" alt=""></p>
 <h1>#</h1>
@@ -833,7 +849,7 @@ body
      
       <div  class="ui tab segment lab" data-tab="10">
         <h1>Loading Semantic-UI</h1>
-<p>Currently, we have downloaded a copy of the Semantic-UI framework and stored it on our <code>assets</code> folder:</p>
+<p>Currently, we have downloaded a copy of the Semantic-UI framework and stored it on our <strong>assets</strong> folder:</p>
 <pre><code>└── public
     ├── assets
     │   └── images
@@ -872,7 +888,7 @@ body
 <li><a href="https://www.cloudflare.com/">https://www.cloudflare.com/</a></li>
 </ul>
 <p>These are services that replicate many common libraries - often storing them in various locations around the world. This means they will load quite quickly.</p>
-<p>First, delete the associated <code>semantic</code> folder, and all files inside the css folder, from <code>assets</code> folder,</p>
+<p>First, delete the associated <strong>semantic</strong> folder, (and all files inside the this folder) from the <strong>assets</strong> folder.</p>
 <p>Now, we can use this version of the <code>&lt;head&gt;</code> section for all our pages:</p>
 <pre><code>&lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -890,6 +906,16 @@ body
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js&quot;&gt;&lt;/script&gt;</code></pre>
 <p>These are links to the semantic css libraries + supporting Javascript need for the library.</p>
 <p>Verify that the site works as before.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercise">
+        <h1>Exercise</h1>
+<h2>Archive</h2>
+<p>This is an archive of the completed project (so far):</p>
+<ul>
+<li><a href="archives/Lab01Solution.zip">Lab01 Solution</a></li>
+</ul>
 
       </div>
      
