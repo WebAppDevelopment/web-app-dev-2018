@@ -7,6 +7,8 @@
 
      
 
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
@@ -120,8 +122,8 @@ body
   </header>
   <div class="right tab-menu menu">
     
-    <a class="item" data-tab="Lab-02a Semantic UI">
-      Lab-02a Semantic UI
+    <a class="item" data-tab="Lab-01a Semantic UI">
+      Lab-01a Semantic UI
     </a>
     
     <a class="item" data-tab="01">
@@ -160,8 +162,8 @@ body
       09
     </a>
     
-    <a class="item" data-tab="Exercises">
-      Exercises
+    <a class="item" data-tab="Exercise">
+      Exercise
     </a>
     
     <div class="item">
@@ -172,15 +174,16 @@ body
 
 <div class="ui segment pushable">
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    <br><br>
     
       
-        <a class="item" href="../../topic-01-css-frameworks/book-a/index.html">
-          Lab-02a Semantic UI
+        <a class="active item" href="../../topic-01-html&css/book-a/index.html">
+          Lab-01a Semantic UI
         </a>
       
     
       
-        <a class="item" href="../../topic-01-css-frameworks/book-b/index.html">
+        <a class="item" href="../../topic-01-html&css/book-b/index.html">
           Lab-02b Semantic UI
         </a>
       
@@ -190,17 +193,17 @@ body
     <div class="ui basic segment" id="labchat">
       <br>
       
-      <div  class="ui tab segment lab" data-tab="Lab-02a Semantic UI">
+      <div  class="ui tab segment lab" data-tab="Lab-01a Semantic UI">
         <h1>Objectives</h1>
-<p>Rebuild the iot web site using semantic-ui</p>
+<p>Rebuild the web site using semantic-ui</p>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="01">
         <h1>Setup</h1>
-<p>The starting point for this lab is the final version of the project from the last lab:</p>
+<p>The starting point for this lab is a website based on a computing programme:</p>
 <ul>
-<li>Download Archive: <a href="https://github.com/wit-computing/iot-web/releases/tag/V07">https://github.com/wit-computing/iot-web/releases/tag/V07</a></li>
+<li>Download Archive: <a href="archives/Lab01a.zip">Lab01a</a></li>
 </ul>
 <p>This is the project structure here:</p>
 <pre><code>└── public
@@ -257,7 +260,7 @@ body
 <ul>
 <li><a href="archives/semantic.zip">semantic.zip</a></li>
 </ul>
-<p>and expand it into the <code>assets</code> folder of your project.</p>
+<p>and expand it into the <strong>assets</strong> folder of your project.</p>
 <p>Make sure it has been expanded correctly - your project structure should look something like this:</p>
 <pre><code>└── public
     ├── assets
@@ -292,13 +295,13 @@ body
     │   └── project.html
     └── style.css</code></pre>
 <p>There should be an extra semantic folder - with the files/folders shown above (some not shown to keep it simpler)</p>
-<p>You should delete the <code>semsntic.zip</code> folder if it is present.</p>
+<p>You should delete the <strong>semantic.zip</strong> folder if it is present.</p>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="03">
         <h1>First Steps...</h1>
-<p>Open index.html and introduce a link to the style sheet we downloaded in the last step:</p>
+<p>Open the home page (<strong>index.html</strong>) and introduce a link to the style sheet we downloaded in the last step:</p>
 <pre><code>  &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/semantic/semantic.css&quot;&gt;</code></pre>
 <p>This goes into the <code>&lt;head&gt;</code> section of index such that it will look like this:</p>
 <h2>index.html</h2>
@@ -317,8 +320,8 @@ body
   color: white;
   height:300px;
 }</code></pre>
-<p>The page is now back to being unformatted - where we started last week - as we have removed almost all of the style sheet rules.</p>
-<p>The site will look like this again:</p>
+<p>The page is now unformatted - as we have removed almost all of the style sheet rules.</p>
+<p>The site will look like this:</p>
 <p><img src="img/01.png" alt=""></p>
 
       </div>
@@ -421,7 +424,7 @@ body
   &lt;/footer&gt;
 
 &lt;/section&gt;</code></pre>
-<p>This is your first <code>Semantic-UI</code> class - more or less replacing the <code>margin: 0 auto</code> we were previously using. You can read about the <code>container</code> class in semantic&#39;s documentation here:</p>
+<p>This is your first <strong>Semantic-UI</strong> class. You can read about the <em>container</em> class in semantic&#39;s documentation here:</p>
 <ul>
 <li><a href="http://semantic-ui.com/elements/container.html#/introduction">http://semantic-ui.com/elements/container.html#/introduction</a></li>
 </ul>
@@ -436,14 +439,14 @@ body
      
       <div  class="ui tab segment lab" data-tab="05">
         <h1>Segment</h1>
-<p>The cornerstone of many of the styles in Semantic-UI is the <code>segment</code> class:</p>
+<p>The cornerstone of many of the styles in Semantic-UI is the <strong>segment</strong> class:</p>
 <ul>
 <li><a href="http://semantic-ui.com/elements/segment.html">http://semantic-ui.com/elements/segment.html</a></li>
 </ul>
-<p>Open the home page and locate the <code>curriculum</code> article. Make the following changes:</p>
+<p>Open the home page and locate the <strong>curriculum</strong> article. Make the following changes:</p>
 <ul>
-<li>remove all of the <code>id</code>s and <code>class</code>s currently in the file.</li>
-<li>give the enclosing article the class <code>class=&quot;ui segment&quot;</code></li>
+<li>remove all of the <strong>ids</strong>  currently in this  <em>curriculum</em> article.</li>
+<li>give the enclosing article the class <strong>class=&quot;ui segment&quot;</strong></li>
 </ul>
 <p>Your curriculum section should know look like this:</p>
 <pre><code>&lt;article class=&quot;ui segment&quot;&gt;
@@ -483,14 +486,14 @@ body
 <p><img src="img/03.png" alt=""></p>
 <p>Notice the frame around the section.</p>
 <p>Do the same for:</p>
-<p>header
-footer
-sponsors.ejs</p>
+<p>header,
+footer,
+and sponsors</p>
 <p>i.e. replace the </p>
 <pre><code>&lt;header id=&quot;header&quot;&gt;</code></pre>
 <p>with </p>
 <pre><code>&lt;header class=&quot;ui segment&quot;&gt;</code></pre>
-<p>Also, remove the horizontal rulers (<code>&lt;hr&gt;</code>) form all includes. These sections should now be like this:</p>
+<p>Also, remove the horizontal rulers (<code>&lt;hr&gt;</code>) from all these elements. These sections should now be like this:</p>
 <h2>header</h2>
 <pre><code>  &lt;header class=&quot;ui segment&quot;&gt;
     &lt;h2&gt;
@@ -536,14 +539,15 @@ sponsors.ejs</p>
 <pre><code>
 &lt;body&gt;
   &lt;section class=&quot;ui container&quot;&gt;
-    ... existing headder section
+    ... existing header section
     &lt;section class=&quot;ui segment&quot;&gt;
       ... the article and figures on the page
     &lt;/section&gt;
     ... existing footer section
   &lt;section&gt;
 &lt;/body&gt;</code></pre>
-<p>It includes the semantic.css in the header, and also <code>container</code> and <code>segment</code> styles. We do this once, and all the pages in the strands folder will be updated:</p>
+<p>It includes the <strong>semantic.css</strong> file in the <code>&lt;head&gt;</code>, and also a <strong>container</strong>  class and a <strong>segment</strong> class. 
+We do this once, and all the pages in the strands folder will be updated:??</p>
 <p><img src="img/05.png" alt=""></p>
 <p>Here is the complete data page in case you need further guidance:</p>
 <pre><code>&lt;!DOCTYPE html&gt;
@@ -613,7 +617,7 @@ sponsors.ejs</p>
      
       <div  class="ui tab segment lab" data-tab="07">
         <h1>Grids I</h1>
-<p>This is our current header section:</p>
+<p>This is our current header section for <strong>index.html</strong>:</p>
 <pre><code>&lt;header class=&quot;ui segment&quot;&gt;
   &lt;h2&gt;
     &lt;img class=&quot;header-crest-img&quot; src=&quot;assets/images/wit-crest.png&quot; alt=&quot;WIT Crest&quot;&gt;
@@ -650,7 +654,7 @@ sponsors.ejs</p>
 <pre><code>&lt;header class=&quot;ui two column center aligned grid segment&quot;&gt;</code></pre>
 <p>Can you see an improvement?</p>
 <p>Now change the image element to the following:</p>
-<pre><code>      &lt;img class=&quot;ui medium image&quot; src=&quot;/assets/images/wit-crest.png&quot; alt=&quot;WIT Crest&quot;&gt;</code></pre>
+<pre><code>      &lt;img class=&quot;ui medium image&quot; src=&quot;assets/images/wit-crest.png&quot; alt=&quot;WIT Crest&quot;&gt;</code></pre>
 <p><img src="img/09.png" alt=""></p>
 <p>Finally, change the header again to this:</p>
 <pre><code>&lt;header class=&quot;ui two column center aligned middle aligned grid segment&quot;&gt;</code></pre>
@@ -668,15 +672,15 @@ sponsors.ejs</p>
     &lt;/p&gt;
   &lt;/div&gt;
 &lt;/header&gt;</code></pre>
-<p>The alignment is part of the <code>segment</code> properties - and you can read about it here:</p>
+<p>The alignment is part of the <strong>segment</strong> properties - and you can read about it here:</p>
 <ul>
 <li><a href="http://semantic-ui.com/elements/segment.html#text-alignment">http://semantic-ui.com/elements/segment.html#text-alignment</a></li>
 </ul>
-<p>Now, replace all of the head sections on the strand pages with this new version:</p>
+<p>Now, replace all of the <em>header</em> sections on the strand pages with this new version:</p>
 <pre><code>  &lt;header class=&quot;ui two column center aligned middle aligned grid segment&quot;&gt;
     &lt;div class=&quot;ui column&quot;&gt;
       &lt;h2 class=&quot;ui header&quot;&gt; Department of Computing &amp;amp; Mathematics &lt;/h2&gt;
-      &lt;h3 class=&quot;ui header&quot;&gt; BSc (Hons) the Internet of Things &lt;/h3&gt;
+      &lt;h3 class=&quot;ui header&quot;&gt; &lt;a href=&quot;../index.html&quot;&gt; BSc (Hons) the Internet of Things &lt;/a&gt; &lt;/h3&gt;
     &lt;/div&gt;
     &lt;div class=&quot;ui column&quot;&gt;
       &lt;p&gt;
@@ -684,6 +688,14 @@ sponsors.ejs</p>
       &lt;/p&gt;
     &lt;/div&gt;
   &lt;/header&gt;</code></pre>
+<p>Also, replace the <em>footer</em> sections on the strand pages with this new version</p>
+<pre><code>&lt;footer class=&quot;ui segment&quot;&gt;
+  &lt;p class=&quot;footer-social-links&quot;&gt;
+    &lt;a href=&quot;http://www.facebook.com/witcomp&quot;&gt; facebook &lt;/a&gt;
+    &lt;a href=&quot;http://twitter.com/ComputingAtWIT&quot;&gt; twitter &lt;/a&gt;
+    &lt;a href=&quot;https://ie.linkedin.com/pub/computing-at-wit/a9/221/1b6&quot;&gt; linkedin &lt;/a&gt;
+  &lt;/p&gt;
+&lt;/footer&gt;</code></pre>
 <p>(This has the path to semantic adjusted)</p>
 
       </div>
@@ -730,7 +742,8 @@ sponsors.ejs</p>
     &lt;/div&gt;
   &lt;/section&gt;
 &lt;/section&gt;</code></pre>
-<p>It is a grid segment - with two rows. The first row has no columns - it is the full width of the section. The second row is a <code>three column</code> row. Try this out now:</p>
+<p>It is a grid segment - with two rows. The first row has no columns - it is the full width of the section. The second row is a <strong>three column</strong> row. 
+Try this out now:</p>
 <p><img src="img/13.png" alt=""></p>
 <p>One more change to center align the elements:</p>
 <pre><code>&lt;section class=&quot;ui center aligned grid segment&quot;&gt;
@@ -791,8 +804,8 @@ sponsors.ejs</p>
     &lt;/p&gt;
   &lt;/section&gt;
 &lt;/article&gt;</code></pre>
-<p>Using the grid system, we divide the section int two rows:</p>
-<pre><code>&lt;section class=&quot;ui grid segment&quot;&gt;
+<p>Using the grid system, we divide the section into two rows:</p>
+<pre><code>&lt;article class=&quot;ui grid segment&quot;&gt;
 
   &lt;section class=&quot;ui three column row&quot;&gt;
     &lt;article class=&quot;column&quot;&gt;
@@ -818,7 +831,7 @@ sponsors.ejs</p>
     &lt;/article&gt;
   &lt;/section&gt;
 
-&lt;/section&gt;</code></pre>
+&lt;/article&gt;</code></pre>
 <p>Can you see the structure?</p>
 <p>Here is the complete section:</p>
 <pre><code>  &lt;article class=&quot;ui grid segment&quot;&gt;
@@ -876,13 +889,9 @@ sponsors.ejs</p>
 
       </div>
      
-      <div  class="ui tab segment lab" data-tab="Exercises">
-        <h1>Archive</h1>
-<p>This is the version of the site at this stage:</p>
-<ul>
-<li><a href="https://github.com/wit-computing/iot-web/releases/tag/Lab05a">https://github.com/wit-computing/iot-web/releases/tag/Lab05a</a></li>
-</ul>
-<h1>Exercise 1: Icons</h1>
+      <div  class="ui tab segment lab" data-tab="Exercise">
+        <h1>Exercise</h1>
+<h2>Exercise 1: Icons</h2>
 <p>Currently the footer looks like this:</p>
 <p><img src="img/16.png" alt=""></p>
 <p>See if you can figure out how to make the section look like this:</p>
