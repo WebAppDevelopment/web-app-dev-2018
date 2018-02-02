@@ -227,7 +227,7 @@ body
       <div  class="ui tab segment lab" data-tab="01">
         <h1>Template 1</h1>
 <p>Create a new project in Glitch - this will be a replica of the project created at the start of the last lab. Rename the project to your preference.</p>
-<p>Trun on the logs viewer, and then import a project from github:</p>
+<p>Turn on the logs viewer, and then import a project from github:</p>
 <p><img src="img/01.png" alt=""></p>
 <p>Enter <code>bmullally/playlist1</code> as shown. This will replace your project completely:</p>
 <p><img src="img/02.png" alt=""></p>
@@ -288,8 +288,10 @@ body
      
       <div  class="ui tab segment lab" data-tab="03">
         <h1>Static Playlist</h1>
-<p>In this step we will start to display the playlist itself. First, replace <code>mainpanel.hbs</code> with a new partial (contained with the existing segment) called <code>listsongs.hbs</code> you can either rename the mainpanel.hbs file or make a copy of it by clicking on the arrow beside the file name:</p>
+<p>In this step we will start to display the playlist itself. First, replace <code>mainpanel.hbs</code> with a new partial called <code>listsongs.hbs</code>. 
+We will rename the <code>mainpanel.hbs</code> file to <strong>listsongs.hbs</strong>.</p>
 <p><img src="./img/10.png" alt=""></p>
+<p>Delete all code and replace it with the following:</p>
 <h2>views/partials/listsongs.hbs</h2>
 <pre><code class="lang-html">&lt;table class=&quot;ui table&quot;&gt;
   &lt;thead&gt;
@@ -371,8 +373,9 @@ body
      
       <div  class="ui tab segment lab" data-tab="04">
         <h1>Dynamic Playlist</h1>
-<p>The app as we have it now could have been completely built as a static web site. However, the framework and tools we have used in this version enable us to evolve this static site into an interactive app</p>
-<p>Thie first step is to eliminate some of the static content from the songlist partial. Here is a new version to replace the current version (In listsongs.hbs replace the table with the following):</p>
+<p>The app as we have it now could have been completely built as a static web site. However, the framework and tools we have used in this version enable us to evolve 
+this static site into an interactive app.</p>
+<p>The first step is to eliminate some of the static content from the songlist partial. Here is a new version to replace the current version (In listsongs.hbs replace the table with the following):</p>
 <pre><code class="lang-html">&lt;table class=&quot;ui table&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -688,7 +691,8 @@ OR</li>
     }
   ]
 }</code></pre>
-<p>We consider this to be a data file rather than a program. Although it looks superficially like javascript, you cannot put control structures, functions or other constructs. Also, the formal is very strict, so the use of double quotes and separator commas is very precise. Any deviation will generate an error in any program that attempts to read it.</p>
+<p>We consider this to be a data file rather than a program. Although it looks superficially like javascript, you cannot put control structures, functions or 
+other constructs. Also, the format is very strict, so the use of double quotes and separator commas is very precise. Any deviation will generate an error in any program that attempts to read it.</p>
 <p>We can revise <code>playlist-store.js</code> to read this file now:</p>
 <h2>models/playlist-store.js</h2>
 <pre><code class="lang-js">&#39;use strict&#39;;
