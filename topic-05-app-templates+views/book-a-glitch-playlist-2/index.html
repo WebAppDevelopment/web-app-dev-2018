@@ -120,8 +120,8 @@ body
   </header>
   <div class="right tab-menu menu">
     
-    <a class="item" data-tab="Lab-4 Glitch Playlist 2">
-      Lab-4 Glitch Playlist 2
+    <a class="item" data-tab="Lab-5 Glitch Playlist 2">
+      Lab-5 Glitch Playlist 2
     </a>
     
     <a class="item" data-tab="Exercise Solutions">
@@ -148,8 +148,8 @@ body
       05
     </a>
     
-    <a class="item" data-tab="07">
-      07
+    <a class="item" data-tab="06">
+      06
     </a>
     
     <a class="item" data-tab="Exercises">
@@ -164,6 +164,7 @@ body
 
 <div class="ui segment pushable">
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    <br><br>
     
       
         <a class="item" href="../../topic-01-html&css/book-a/index.html">
@@ -196,8 +197,8 @@ body
       
     
       
-        <a class="item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
-          Lab-4 Glitch Playlist 2
+        <a class="active item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
+          Lab-5 Glitch Playlist 2
         </a>
       
     
@@ -206,9 +207,9 @@ body
     <div class="ui basic segment" id="labchat">
       <br>
       
-      <div  class="ui tab segment lab" data-tab="Lab-4 Glitch Playlist 2">
+      <div  class="ui tab segment lab" data-tab="Lab-5 Glitch Playlist 2">
         <h1>Objectives</h1>
-<p>Refactor the dashboard controller to show summary on of the playlists + link to show playlist details.</p>
+<p>Refactor the dashboard controller to show summary of the playlists + link to show playlist details.</p>
 
       </div>
      
@@ -502,7 +503,7 @@ const playlistStore = {
 };
 
 module.exports = playlistStore;</code></pre>
-<p>In this version, we have an object <code>playlsitStore</code> one attribute:</p>
+<p>In this version, we have an object <code>playlistStore</code>, which has one attribute:</p>
 <ul>
 <li><code>playListCollection</code>: this is the array of playlists loaded from the json file.</li>
 </ul>
@@ -570,7 +571,7 @@ module.exports = playlist;</code></pre>
 <p>Having a playlist app, without the ability to create/delete songs or playlists is clearly very limited. We have, essentially, an app that allows us to <code>Read</code> our models, but not <code>Create</code>, <code>Update</code> or <code>Delete</code> elements of the model.</p>
 <p>We can start with providing a facility to delete songs from individual playlists. Our view will need to look like this:</p>
 <p><img src="img/03.png" alt=""></p>
-<p>and deleting a button should remove the corresponding song.</p>
+<p>and clicking the delete button should remove the corresponding song.</p>
 <p>Any new button/link/action on our page requires:</p>
 <ul>
 <li>an element in a view</li>
@@ -612,7 +613,7 @@ module.exports = playlist;</code></pre>
 
       </div>
      
-      <div  class="ui tab segment lab" data-tab="07">
+      <div  class="ui tab segment lab" data-tab="06">
         <h1>Deleting Songs 2</h1>
 <p>There are many techniques for deleting an element from an array, which require more in depth Javascript knowledge. However, we have a simpler solution for the moment via the <code>lodash</code> library.</p>
 <p>At the top of our <code>playlist-store.js</code> module, import this library:</p>
