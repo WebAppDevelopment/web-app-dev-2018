@@ -1,0 +1,598 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+  
+<header class="ui center aligned middle aligned stackable grid segment">
+
+  
+    
+  <a class="ui blue left corner label">
+    <div id="showTOC" class="popup" data-content="Reveal TOC">
+      <i id="toc" class="sitemap big  icon"></i>
+    </div>
+  </a>
+
+  
+
+  <div class="two wide column">
+    <i class="huge  icon"></i></a>
+  </div>
+
+
+  <div class="ui six wide column">
+    <h2> Week 8: JS: Arrays  </h2>
+    <div class="ui tiny blue label">
+      
+    </div>
+  </div>
+
+  <div class="ui two wide column">
+    
+      
+  <div class="two wide column sitemap">
+    <div class="popup" data-content="To the top level Topics for this Module...">
+      <a href="../index.html"> <i class="huge home icon"></i> <br> Module Home </a>
+    </div>
+  </div>
+
+    
+  </div>
+
+
+    
+  
+
+
+
+  <div class="three wide column">
+    
+    
+      
+  <div class="ui equal width center aligned grid segment">
+    
+      
+        <div class="column">
+          
+          
+          
+            
+          
+          <div class="popup" data-content="All slide's in module">
+            <a href="../talkwall.html"> <i class="big object group icon"></i> </a>
+            <div class="ui blue mini circular label">
+              34
+            </div>
+          </div>
+        </div>
+      
+    
+      
+        <div class="column">
+          
+          
+          
+          <div class="popup" data-content="All lab's in module">
+            <a href="../labwall.html"> <i class="big lab icon"></i> </a>
+            <div class="ui blue mini circular label">
+              9
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+    
+  </div>
+
+</header>
+
+  
+
+
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <div class="header">
+        <a class="item" href="#">
+          
+        </a>
+      </div>
+      <div class="menu">
+        
+          <a class="item" href="talk-a-array-methods/array-methods.pdf">
+            Array Methods 
+          </a>
+        
+          <a class="item" href="talk-b-array-iteration/array-iteration.pdf">
+            Array Iteration 
+          </a>
+        
+          <a class="item" href="talk-b-arrays-basics/arrays-basics.pdf">
+            Arrays: Basics 
+          </a>
+        
+          <a class="item" href="talk-c-arrays-of-strings/arrays-of-strings.pdf">
+            Arrays of Strings 
+          </a>
+        
+          <a class="item" href="talk-d-arrays-of-objects/arrays-of-objects.pdf">
+            Arrays of Objects 
+          </a>
+        
+          <a class="item" href="book-a-js-arrays/index.html">
+            Lab-6 JS Arrays
+          </a>
+        
+          <a class="item" href="book-b-gomark-2/index.html">
+            Lab-gomark-2
+          </a>
+        
+      </div>
+    </div>
+    <div class="pusher">
+      <section class="ui container">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+          
+  
+
+        
+          
+  
+    <section class="ui raised stackable segment">
+      <div class="ui blue left ribbon large label"> 
+  
+    Slides
+  
+  
+  
+ </div>
+      <div class="ui centered four doubling stackable cards">
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Array Methods </div>
+
+  </div>
+
+  <a href=
+  
+    "talk-a-array-methods/array-methods.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-a-array-methods/array-methods.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>Exploring length, slice, concat, join, indexOf, lastIndexOf</p>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Array Iteration </div>
+
+  </div>
+
+  <a href=
+  
+    "talk-b-array-iteration/array-iteration.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-b-array-iteration/array-iteration.jpeg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>Using for, while and do-while to iterate over an array</p>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Arrays: Basics </div>
+
+  </div>
+
+  <a href=
+  
+    "talk-b-arrays-basics/arrays-basics.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-b-arrays-basics/arrays-basics.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>Creating, accessing, adding to and removing from arrays.</p>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Arrays of Strings </div>
+
+  </div>
+
+  <a href=
+  
+    "talk-c-arrays-of-strings/arrays-of-strings.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-c-arrays-of-strings/arrays-of-strings.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>A review of the structure of arrays of Strings</p>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Arrays of Objects </div>
+
+  </div>
+
+  <a href=
+  
+    "talk-d-arrays-of-objects/arrays-of-objects.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-d-arrays-of-objects/arrays-of-objects.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>Arrays of more complex data structures, including nested objects.</p>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+        
+      </div>
+    </section>
+  
+
+        
+          
+  
+    <section class="ui raised stackable segment">
+      <div class="ui blue left ribbon large label"> 
+  
+  
+    Labs
+  
+  
+ </div>
+      <div class="ui centered four doubling stackable cards">
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Lab-6 JS Arrays</div>
+
+  </div>
+
+  <a href=
+  
+    "book-a-js-arrays/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-a-js-arrays/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>Array Basics, Array Methods &amp; Iteration</p>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Lab-gomark-2</div>
+
+  </div>
+
+  <a href=
+  
+    "book-b-gomark-2/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-b-gomark-2/img/main.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <h2>Github Repo</h2>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+        
+      </div>
+    </section>
+  
+
+        
+          
+  
+
+        
+          
+  
+
+        
+          
+  
+
+        
+      </section>
+    </div>
+  </div>
+
+
+    <!--<footer>-->
+
+    <!--</footer>-->
+    <script>
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
