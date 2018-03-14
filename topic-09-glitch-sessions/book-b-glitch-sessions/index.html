@@ -120,8 +120,8 @@ body
   </header>
   <div class="right tab-menu menu">
     
-    <a class="item" data-tab="Lab-8 Glitch Sessions">
-      Lab-8 Glitch Sessions
+    <a class="item" data-tab="Lab-9 Glitch Sessions">
+      Lab-9 Glitch Sessions
     </a>
     
     <a class="item" data-tab="01">
@@ -209,13 +209,7 @@ body
     
       
         <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
-          Lab-6 JS Arrays
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-08-js-arrays/book-b-gomark-2/index.html">
-          Lab-gomark-2
+          Lab-8 JS Arrays
         </a>
       
     
@@ -227,25 +221,7 @@ body
     
       
         <a class="item" href="../../topic-09-glitch-sessions/book-b-glitch-sessions/index.html">
-          Lab-8 Glitch Sessions
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
-          Lab-10a Cloudinary Setup
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-10-glitch-images/book-b-gomix-cloudinary/index.html">
-          Lab-10b gomix-picture-store
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-10-js-objects/book-a-js-objects/index.html">
-          Lab-9 JS Objects
+          Lab-9 Glitch Sessions
         </a>
       
     
@@ -254,7 +230,7 @@ body
     <div class="ui basic segment" id="labchat">
       <br>
       
-      <div  class="ui tab segment lab" data-tab="Lab-8 Glitch Sessions">
+      <div  class="ui tab segment lab" data-tab="Lab-9 Glitch Sessions">
         <h1>Objectives</h1>
 <p>Introduce Sessions onto the Playlist application, enabling user accounts and cookie-based authentication.</p>
 
@@ -270,14 +246,15 @@ body
   &quot;playlistCollection&quot;: [
   ]
 }</code></pre>
-<p>We need a new method in the playlist-store module, which will retrieve a playlist based on a specific user id.</p>
+<p>We need a new method in the <code>playlist-store</code> module, which will retrieve a playlist based on a specific user id.</p>
 <h2>models/playlist-store.js</h2>
 <pre><code>...
   getUserPlaylists(userid) {
     return this.store.findBy(this.collection, { userid: userid });
   },
 ...</code></pre>
-<p>This new methods takes a userid, and will only fetch playlists belonging to the user with the specific id. We havent introduced the User model yet - nor are we storing playlists with such an id. We will make these changes in this lab.</p>
+<p>This new method takes a userid, and will only fetch playlists belonging to the user with the specific id. We have not introduced the User model 
+yet - nor are we storing playlists with such an id. We will make these changes in this lab.</p>
 
       </div>
      
@@ -597,7 +574,7 @@ module.exports = router;</code></pre>
 <li>logout</li>
 <li>Log in as &#39;marge@simpson&#39;, &#39;secret&#39;. </li>
 </ul>
-<p>Notice that we are seeing Homers test playlist even when we log in as marge? The plaulist-store.json may look loke this:</p>
+<p>Notice that we are seeing Homers test playlist even when we log in as marge? The playlist-store.json may look like this:</p>
 <pre><code>{
   &quot;playlistCollection&quot;: [
     {
