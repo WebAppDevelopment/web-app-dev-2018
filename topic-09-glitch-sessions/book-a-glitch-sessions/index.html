@@ -445,7 +445,8 @@ module.exports = userStore;</code></pre>
 &lt;script&gt;
   $(&quot;#{{id}}&quot;).addClass(&quot;active item&quot;);
 &lt;/script&gt;</code></pre>
-<p>And finally, we need to add the following style rule to the <code>style.css</code> (public/stylesheets/style.css) file.</p>
+<h2>public/stylesheets/style.css</h2>
+<p>And finally, we need to create a file called <code>style.css</code> (public/stylesheets/style.css) and add the following style rule: </p>
 <pre><code>.name{
   padding-top:20px;
   padding-right:5px;
@@ -458,7 +459,7 @@ module.exports = userStore;</code></pre>
       <div  class="ui tab segment lab" data-tab="05">
         <h1>Accounts controller</h1>
 <p>This is a new controller to support these views:</p>
-<h2>controllers/accounts</h2>
+<h2>controllers/accounts.js</h2>
 <pre><code>&#39;use strict&#39;;
 const userstore = require(&#39;../models/user-store&#39;);
 const logger = require(&#39;../utils/logger&#39;);
@@ -580,10 +581,10 @@ module.exports = router;</code></pre>
         <h1>Dashboard</h1>
 <p>Try the following now:</p>
 <ul>
-<li>Log in as &#39;homer@simpson&#39;, &#39;secret&#39;. </li>
+<li>Log in as &#39;homer@simpson.com&#39;, &#39;secret&#39;.</li>
 <li>Add a playlist called &#39;test&#39;.</li>
 <li>logout</li>
-<li>Log in as &#39;marge@simpson&#39;, &#39;secret&#39;. </li>
+<li>Log in as &#39;marge@simpson.com&#39;, &#39;secret&#39;.</li>
 </ul>
 <p>Notice that we are seeing Homers test playlist even when we log in as marge? The playlist-store.json may look like this:</p>
 <pre><code>{
@@ -619,8 +620,8 @@ index(request, response) {
     }
     else response.redirect(&#39;/&#39;);
   },...</code></pre>
-<p>This revised <code>index</code> action returns an object for the user logged in. Using the <code>loggedInUser.id</code> the playlist associated with that user is returned and the full name 
-is created by concatenating the the loggedInUser.firstName and loggedInUser.lastName. The playlist will be 
+<p>This revised <code>index</code> action returns an object for the user logged in. Using the <code>loggedInUser.id</code> the playlist associated with that user is returned and the full name
+is created by concatenating the the loggedInUser.firstName and loggedInUser.lastName. The playlist will be
 available to the dashboard and the full name is displayed on each subsequent page rendered (through <code>menu.hbs</code>).</p>
 <p>Revised addPlaylist action:</p>
 <pre><code>...
@@ -684,12 +685,12 @@ available to the dashboard and the full name is displayed on each subsequent pag
       </div>
      
       <div  class="ui tab segment lab" data-tab="08">
-        <h1>Revised controller/*.js modules</h1>
-<p>The <code>about.js</code>, <code>start.js</code> and <code>playlist.js</code> modules also need to keep track of the logged in user, so we need to import the accounts module. 
+        <h1>Revised controller/ *.js modules</h1>
+<p>The <code>about.js</code>, <code>start.js</code> and <code>playlist.js</code> modules also need to keep track of the logged in user, so we need to import the accounts module.
 So, into each module add the following statement (after or before the other <code>require</code> statement(s)):</p>
 <pre><code>const accounts = require (&#39;./accounts.js&#39;);</code></pre>
 <h2>Revised index action</h2>
-<p>In the <code>index</code> action for each module, we need to return an object for the logged in user to check that a user is actually logged in and if so 
+<p>In the <code>index</code> action for each module, we need to return an object for the logged in user to check that a user is actually logged in and if so
 extract their full name.</p>
 <h3>Revised index action (about.js)</h3>
 <pre><code>index(request, response) {
