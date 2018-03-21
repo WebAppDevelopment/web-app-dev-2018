@@ -7,8 +7,6 @@
 
      
 
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
@@ -117,7 +115,7 @@ body
   <header class="header item">
     <i id="toc" class="sitemap icon"></i>
     <a href="../index.html">
-      Week 9: Glitch: Sessions 
+      Week 9: Glitch: Sessions
     </a>
   </header>
   <div class="right tab-menu menu">
@@ -170,7 +168,6 @@ body
 
 <div class="ui segment pushable">
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    <br><br>
     
       
         <a class="item" href="../../topic-01-html&css/book-a/index.html">
@@ -221,7 +218,7 @@ body
       
     
       
-        <a class="active item" href="../../topic-09-glitch-sessions/book-a-glitch-sessions/index.html">
+        <a class="item" href="../../topic-09-glitch-sessions/book-a-glitch-sessions/index.html">
           Lab-9 Glitch Sessions
         </a>
       
@@ -430,11 +427,7 @@ module.exports = userStore;</code></pre>
 &lt;script&gt;
   $(&quot;#{{id}}&quot;).addClass(&quot;active item&quot;);
 &lt;/script&gt;</code></pre>
-<<<<<<< HEAD:topic-09-glitch-sessions/book-b-glitch-sessions/index.html
-<p>We need to extend the menu partial - which will introduce a new menu option to allow a user to log out:</p>
-=======
 <p>We need to extend the menu partial - which will introduce a new menu option to allow a user to log out. And, we will display the name of the logged in user:</p>
->>>>>>> 9043fd55309a214472a1e77fa31d003b3f9e0bbf:topic-09-glitch-sessions/book-a-glitch-sessions/index.html
 <h2>views/partials/menu.hbs</h2>
 <pre><code>&lt;nav class=&quot;ui menu&quot;&gt;
   &lt;header class=&quot;ui header item&quot;&gt; &lt;a href=&quot;/&quot;&gt; Playlist 4 &lt;/a&gt;&lt;/header&gt;
@@ -449,14 +442,6 @@ module.exports = userStore;</code></pre>
 &lt;script&gt;
   $(&quot;#{{id}}&quot;).addClass(&quot;active item&quot;);
 &lt;/script&gt;</code></pre>
-<<<<<<< HEAD:topic-09-glitch-sessions/book-b-glitch-sessions/index.html
-<p>And finally, we need to add the following style rule to the <code>style.css</code> (public/stylesheets/style.css) file.</p>
-<pre><code>.name{
-  padding-top:15px;
-  padding-bottom:10px;
-  padding-right:5px;
-  line-height:20px;
-=======
 <h2>public/stylesheets/style.css</h2>
 <p>And finally, we need to create a file called <code>style.css</code> (public/stylesheets/style.css) and add the following style rule: </p>
 <pre><code>.name{
@@ -464,7 +449,6 @@ module.exports = userStore;</code></pre>
   padding-right:5px;
   line-height:20px;
   font-weight:bold;
->>>>>>> 9043fd55309a214472a1e77fa31d003b3f9e0bbf:topic-09-glitch-sessions/book-a-glitch-sessions/index.html
 }</code></pre>
 
       </div>
@@ -626,11 +610,7 @@ index(request, response) {
     const viewData = {
       title: &#39;Playlist Dashboard&#39;,
       playlists: playlistStore.getUserPlaylists(loggedInUser.id),
-<<<<<<< HEAD:topic-09-glitch-sessions/book-b-glitch-sessions/index.html
-      username: loggedInUser.firstName + &#39; &#39; + loggedInUser.lastName,
-=======
       fullname: loggedInUser.firstName + &#39; &#39; + loggedInUser.lastName,
->>>>>>> 9043fd55309a214472a1e77fa31d003b3f9e0bbf:topic-09-glitch-sessions/book-a-glitch-sessions/index.html
     };
     logger.info(&#39;about to render&#39;, playlistStore.getAllPlaylists());
     response.render(&#39;dashboard&#39;, viewData);
@@ -746,7 +726,7 @@ extract their full name.</p>
     const viewData = {
       title: &#39;Playlist&#39;,
       playlist: playlistStore.getPlaylist(playlistId),
-      username: loggedInUser.firstName + &#39; &#39; + loggedInUser.lastName,
+      fullname: loggedInUser.firstName + &#39; &#39; + loggedInUser.lastName,
     };
     response.render(&#39;playlist&#39;, viewData);
     }
@@ -819,9 +799,9 @@ extract their full name.</p>
 
 
 
-    <!--<footer>-->
+    <footer>
 
-    <!--</footer>-->
+    </footer>
     <script>
       $(document).ready(function() {
   $('img').addClass('ui image');
