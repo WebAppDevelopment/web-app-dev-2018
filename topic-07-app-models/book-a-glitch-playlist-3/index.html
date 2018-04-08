@@ -161,6 +161,12 @@ body
     <br><br>
     
       
+        <a class="item" href="../../topic-00-assignments/book-a-webmark-1/index.html">
+          Assignment One Solution
+        </a>
+      
+    
+      
         <a class="item" href="../../topic-01-html&css/book-a/index.html">
           Lab-01a Semantic UI
         </a>
@@ -202,6 +208,36 @@ body
         </a>
       
     
+      
+        <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
+          Lab-8 JS Arrays
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-a-glitch-sessions/index.html">
+          Lab-9 Glitch Sessions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-b-glitch-sessions/index.html">
+          07
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
+          Lab-10a Cloudinary Setup
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-b-gomix-cloudinary/index.html">
+          Lab-10b gomix-picture-store
+        </a>
+      
+    
   </div>
   <div class="pusher" tabindex="-1">
     <div class="ui basic segment" id="labchat">
@@ -215,7 +251,7 @@ body
      
       <div  class="ui tab segment lab" data-tab="Exercise Solutions">
         <h1>Exercise Solutions</h1>
-<p>This lab requires that the <code>Glitch-playlist-2</code> lab be completed. If you have lost your solution, create a new project in Glitch and select the <code>import from github</code> option and enter <code>bmullally\playlist2-complete</code> to import a completed version.</p>
+<p>This lab requires that the <code>Glitch-playlist-2</code> lab be completed. If you have lost your solution, create a new project in Glitch and select the <code>import from github</code> option and enter <code>bmullally/playlist2-complete</code> to import a completed version.</p>
 <p><strong>Note:</strong> All the tasks below are completed in the downloaded version, so take your time to look through the solutions.</p>
 <h2>Exercise 1: UX Enhancements &amp; Exercise 3: listplaylists partial</h2>
 <p>Introduce a &#39;Delete Playlist&#39; button for each playlist, represented by a <code>trash</code> icon.</p>
@@ -274,11 +310,11 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
   &lt;div class=&quot;two fields&quot;&gt;
     &lt;div class=&quot;field&quot;&gt;
       &lt;label&gt;Title&lt;/label&gt;
-      &lt;input placeholder=&quot;Title&quot; type=&quot;text&quot; name=&quot;title&quot;&gt;
+      &lt;input placeholder=&quot;Title&quot; type=&quot;text&quot; name=&quot;title&quot; autofocus required&gt;
     &lt;/div&gt;
     &lt;div class=&quot;field&quot;&gt;
       &lt;label&gt;Artist&lt;/label&gt;
-      &lt;input placeholder=&quot;Artist&quot; type=&quot;text&quot; name=&quot;artist&quot;&gt;
+      &lt;input placeholder=&quot;Artist&quot; type=&quot;text&quot; name=&quot;artist&quot; required&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;button class=&quot;ui blue submit button&quot;&gt;Add Song&lt;/button&gt;
@@ -377,7 +413,7 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
 <pre><code class="lang-html">&lt;form class=&quot;ui stacked segment form&quot; action=&quot;/dashboard/addplaylist&quot; method=&quot;POST&quot;&gt;
   &lt;div class=&quot;field&quot;&gt;
     &lt;label&gt;Title&lt;/label&gt;
-    &lt;input placeholder=&quot;Title&quot; type=&quot;text&quot; name=&quot;title&quot;&gt;
+    &lt;input placeholder=&quot;Title&quot; type=&quot;text&quot; name=&quot;title&quot; autofocus required&gt;
   &lt;/div&gt;
   &lt;button class=&quot;ui blue submit button&quot;&gt;Add Playlist&lt;/button&gt;
 &lt;/form&gt;</code></pre>
@@ -463,8 +499,8 @@ module.exports = JsonStore;</code></pre>
 <li><a href="https://github.com/typicode/lowdb">https://github.com/typicode/lowdb</a></li>
 </ul>
 <p>It will manage the json file we have been using, enabling updates in a convenient manner. You do not need to understand this module in depth for the moment, we will use another wrapper module to interact with it.</p>
-<p>Here is the wraper, which is a new version of our playlist store module:</p>
-<h2>modules/playlist-store.js</h2>
+<p>Here is the wrapper, which is a new version of our playlist store module:</p>
+<h2>models/playlist-store.js</h2>
 <pre><code class="lang-js">&#39;use strict&#39;;
 
 const _ = require(&#39;lodash&#39;);
