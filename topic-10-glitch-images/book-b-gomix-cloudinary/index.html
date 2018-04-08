@@ -7,8 +7,6 @@
 
      
 
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
@@ -166,7 +164,6 @@ body
 
 <div class="ui segment pushable">
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    <br><br>
     
       
         <a class="item" href="../../topic-00-assignments/book-a-webmark-1/index.html">
@@ -229,19 +226,13 @@ body
       
     
       
-        <a class="item" href="../../topic-09-glitch-sessions/book-b-glitch-sessions/index.html">
-          07
-        </a>
-      
-    
-      
         <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
           Lab-10a Cloudinary Setup
         </a>
       
     
       
-        <a class="active item" href="../../topic-10-glitch-images/book-b-gomix-cloudinary/index.html">
+        <a class="item" href="../../topic-10-glitch-images/book-b-gomix-cloudinary/index.html">
           Lab-10b gomix-picture-store
         </a>
       
@@ -261,10 +252,10 @@ body
         <h1>Setup</h1>
 <p>In Glitch,  create a new project and then import this to replace the default content:</p>
 <ul>
-<li><a href="https://github.com/bmullally/glitch-template-2">https://github.com/bmullally/glitch-template-2</a></li>
+<li><a href="https://github.com/edeleastar/Glitch-template-2">https://github.com/edeleastar/Glitch-template-2</a></li>
 </ul>
-<p>You do this be going to the advanced menu, select Import from Github and enter <code>bmullally\glitch-template-2</code></p>
-<p>Explore the UX. It is a variant on the template we have been already using, except this one has user accounts built in.</p>
+<p>You do this be going to the advanced menu, select Import from Github and enter <code>edeleastar/Glitch-template-2</code></p>
+<p>Explore the UX. It is a variant on the template we have been already using, except this one has user accounts built in. </p>
 <p>There are already 2 accounts pre-loaded (Homer and Marge). Try these out - and also try registering a new user.</p>
 <p>Review the source - it should be familiar from earlier labs.</p>
 
@@ -332,7 +323,7 @@ const routes = require(&#39;./routes&#39;);
 app.use(&#39;/&#39;, routes);
 
 const listener = app.listen(process.env.PORT || 4000, function () {
-  logger.info(`Glitch-template-2 started on port ${listener.address().port}`);
+  logger.info(`Glitch-template-1 started on port ${listener.address().port}`);
 });</code></pre>
 <p>Make sure the app starts without any errors and functions as expected.</p>
 
@@ -440,7 +431,7 @@ module.exports = pictureStore;</code></pre>
   }
 }</code></pre>
 <p>Create a folder called &#39;.data&#39; - this will be private in Glitch. Then create a file called <code>.env.json</code> in that folder containing your credentials as shown.</p>
-<p>NB: It is very important to keep your credentials in the <code>.data</code> folder - as they will be hidden from any Glitch users who wish to remix your app</p>
+<p>NB: It is very important to keep your credentials in the <code>.data</code> folder - as they will be hidden from any Glitch users who wish to remix your app.</p>
 
       </div>
      
@@ -480,7 +471,7 @@ module.exports = pictureStore;</code></pre>
     &lt;/section&gt;
   &lt;/section&gt;
 &lt;/section&gt;</code></pre>
-<p>The dashboard should look like this:</p>
+<p>The dahboard should look like this:</p>
 <p><img src="img/01.png" alt=""></p>
 <p>The UI for uploading a picture should work - try to upload one now. When you press the &#39;upload&#39; button you will get this:</p>
 <pre><code>Cannot POST /dashboard/uploadpicture</code></pre>
@@ -654,9 +645,9 @@ router.get(&#39;/dashboard/deletepicture&#39;, dashboard.deletePicture);
         <h1>Solution</h1>
 <p>This is the completed application:</p>
 <ul>
-<li><a href="https://github.com/bmullally/glitch-image-store">https://github.com/bmullally/glitch-image-store</a></li>
+<li><a href="https://github.com/edeleastar/Glitch-image-store">https://github.com/edeleastar/Glitch-image-store</a></li>
 </ul>
-<p>If you are in Glitch - import the project from github: <code>bmullally\glitch-image-store</code></p>
+<p>If you are in Glitch - import the project from github: <code>edeleastar/Glitch-image-store</code> </p>
 <h1>Exercise 1: Download and run Locally</h1>
 <p>Download the project and run it on our own workstation. Remember, after downloading you must run:</p>
 <pre><code>npm install</code></pre>
