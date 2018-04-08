@@ -10,7 +10,7 @@
 
   $.ajax({
     type: 'GET',
-    url: '//WebAppDevelopment.github.io/web-app-dev-2018//topic-05-app-templates+views/indexmoodle.html',
+    url: '//WebAppDevelopment.github.io/web-app-dev-2018///topic-09-glitch-sessions/indexmoodle.html',
     xhrFields: {
       withCredentials: false
     },
