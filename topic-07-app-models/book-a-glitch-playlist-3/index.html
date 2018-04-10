@@ -158,6 +158,12 @@ body
   <div class="ui inverted labeled icon left inline vertical sidebar menu">
     
       
+        <a class="item" href="../../topic-00-assignments/book-a-webmark-1/index.html">
+          Assignment One Solution
+        </a>
+      
+    
+      
         <a class="item" href="../../topic-01-html&css/book-a/index.html">
           Lab-01a Semantic UI
         </a>
@@ -201,7 +207,31 @@ body
     
       
         <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
-          Lab-6 JS Arrays
+          Lab-8 JS Arrays
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-a-glitch-sessions/index.html">
+          Lab-9 Glitch Sessions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-glitch-sessions/book-b-glitch-sessions/index.html">
+          07
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
+          Lab-10a Cloudinary Setup
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-10-glitch-images/book-b-gomix-cloudinary/index.html">
+          Lab-10b gomix-picture-store
         </a>
       
     
@@ -277,11 +307,11 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
   &lt;div class=&quot;two fields&quot;&gt;
     &lt;div class=&quot;field&quot;&gt;
       &lt;label&gt;Title&lt;/label&gt;
-      &lt;input placeholder=&quot;Title&quot; type=&quot;text&quot; name=&quot;title&quot;&gt;
+      &lt;input placeholder=&quot;Title&quot; type=&quot;text&quot; name=&quot;title&quot; autofocus required&gt;
     &lt;/div&gt;
     &lt;div class=&quot;field&quot;&gt;
       &lt;label&gt;Artist&lt;/label&gt;
-      &lt;input placeholder=&quot;Artist&quot; type=&quot;text&quot; name=&quot;artist&quot;&gt;
+      &lt;input placeholder=&quot;Artist&quot; type=&quot;text&quot; name=&quot;artist&quot; required&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;button class=&quot;ui blue submit button&quot;&gt;Add Song&lt;/button&gt;
@@ -380,7 +410,7 @@ router.get(&#39;/dashboard/deleteplaylist/:id&#39;, dashboard.deletePlaylist);
 <pre><code class="lang-html">&lt;form class=&quot;ui stacked segment form&quot; action=&quot;/dashboard/addplaylist&quot; method=&quot;POST&quot;&gt;
   &lt;div class=&quot;field&quot;&gt;
     &lt;label&gt;Title&lt;/label&gt;
-    &lt;input placeholder=&quot;Title&quot; type=&quot;text&quot; name=&quot;title&quot;&gt;
+    &lt;input placeholder=&quot;Title&quot; type=&quot;text&quot; name=&quot;title&quot; autofocus required&gt;
   &lt;/div&gt;
   &lt;button class=&quot;ui blue submit button&quot;&gt;Add Playlist&lt;/button&gt;
 &lt;/form&gt;</code></pre>
@@ -467,7 +497,7 @@ module.exports = JsonStore;</code></pre>
 </ul>
 <p>It will manage the json file we have been using, enabling updates in a convenient manner. You do not need to understand this module in depth for the moment, we will use another wrapper module to interact with it.</p>
 <p>Here is the wrapper, which is a new version of our playlist store module:</p>
-<h2>modules/playlist-store.js</h2>
+<h2>models/playlist-store.js</h2>
 <pre><code class="lang-js">&#39;use strict&#39;;
 
 const _ = require(&#39;lodash&#39;);
