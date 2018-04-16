@@ -226,6 +226,12 @@ body
       
     
       
+        <a class="item" href="../../topic-09-glitch-sessions/book-b-glitch-sessions/index.html">
+          07
+        </a>
+      
+    
+      
         <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
           Lab-10a Cloudinary Setup
         </a>
@@ -258,7 +264,11 @@ body
         <h1>Setup</h1>
 <p>In Glitch, create a new project and then import this repository to replace the default content:</p>
 <ul>
+<<<<<<< HEAD
+<li><a href="https://github.com/rbirney/glitch-template-2" target="_blank">github.com/rbirney/glitch-template-2</a></li>
+=======
 <li><a href="https://github.com/rbirney/glitch-template-2">https://github.com/rbirney/glitch-template-2</a></li>
+>>>>>>> 3a62f5773dd7a42ca78ca86bbb577536e403f3ec
 </ul>
 <p>You do this by going to the advanced options menu in Glitch, select Import from Github and enter <code>rbirney/glitch-template-2</code></p>
 <p>Explore the UX. It is a variant on the template we have been already using, except this one has user accounts built in.</p>
@@ -573,7 +583,7 @@ module.exports = dashboard;</code></pre>
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-<p>... and we can replace the picture segment on the dashboad with this:</p>
+<p>... and we can replace the picture segment on the dashboard with this:</p>
 <h2>views/dashboard.hbs</h2>
 <pre><code>...
   &lt;section class=&quot;ui raised segment&quot;&gt;
@@ -602,7 +612,7 @@ module.exports = dashboard;</code></pre>
 router.get(&#39;/dashboard/deleteallpictures&#39;, dashboard.deleteAllPictures);
 router.get(&#39;/dashboard/deletepicture&#39;, dashboard.deletePicture);
 ...</code></pre>
-<p>This is the implementation of the Dasboard delete actions:</p>
+<p>This is the implementation of the Dashboard delete actions:</p>
 <h2>controllers/dashboard.js</h2>
 <pre><code>...
   deleteAllPictures(request, response) {
@@ -651,9 +661,15 @@ router.get(&#39;/dashboard/deletepicture&#39;, dashboard.deletePicture);
         <h1>Solution</h1>
 <p>This is the completed application:</p>
 <ul>
+<<<<<<< HEAD
+<li><a href= "https://github.com/bmullally/glitch-image-store" target="_blank">github.com/bmullally/glitch-image-store</a></li>
+</ul>
+<p>If you are in Glitch - import the project from github: <code>bmullally/glitch-image-store</code></p>
+=======
 <li><a href="https://github.com/bmullally/glitch-image-store">https://github.com/bmullally/glitch-image-store</a></li>
 </ul>
 <p>If you are in Glitch - import the project from github: <code>bmullally\glitch-image-store</code></p>
+>>>>>>> 3a62f5773dd7a42ca78ca86bbb577536e403f3ec
 <h1>Exercise 1: Download and run Locally</h1>
 <p>Download the project and run it on our own workstation. Remember, after downloading you must run:</p>
 <pre><code>npm install</code></pre>
@@ -661,7 +677,7 @@ router.get(&#39;/dashboard/deletepicture&#39;, dashboard.deletePicture);
 <pre><code>npm start</code></pre>
 <p>to run. Browse to</p>
 <ul>
-<li><a href="http://localhost:4000/">http://localhost:4000/</a></li>
+<li><a href = "http://localhost:4000" target ="_ blank">localhost:4000</a></li>
 </ul>
 <p>to see it in action. Experiment with uploading some pictures. However, you must have your own .env file locally if this to work:</p>
 <h2>.env.json</h2>
