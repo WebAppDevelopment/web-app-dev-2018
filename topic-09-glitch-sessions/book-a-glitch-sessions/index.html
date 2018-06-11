@@ -1,32 +1,22 @@
- <!DOCTYPE html>
- <html>
-   <head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
 
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-     
-
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
-
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-     <script>hljs.initHighlightingOnLoad();</script>
-
-     
-
-     <style>
-       
-
-body 
+body
 {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
 }
@@ -48,18 +38,6 @@ figcaption
   padding: 1rem 0;
   overflow: visible;
 }
-
-
-
-     </style>
-
-   </head>
-
-  <body>
-    
-
-<style>
-  
 
 code
 {
@@ -111,158 +89,163 @@ body
 
 
 
-</style>
+    </style>
+  </head>
 
-<div class="ui fixed top pointing inverted stackable menu labmenu">
-  <header class="header item">
-    <i id="toc" class="sitemap icon"></i>
-    <a href="../index.html">
-      Week 9: Glitch: Sessions 
-    </a>
-  </header>
-  <div class="right tab-menu menu">
+  <body>
     
-    <a class="item" data-tab="Lab-9 Glitch Sessions">
-      Lab-9 Glitch Sessions
-    </a>
     
-    <a class="item" data-tab="01">
-      01
-    </a>
-    
-    <a class="item" data-tab="02">
-      02
-    </a>
-    
-    <a class="item" data-tab="03">
-      03
-    </a>
-    
-    <a class="item" data-tab="04">
-      04
-    </a>
-    
-    <a class="item" data-tab="05">
-      05
-    </a>
-    
-    <a class="item" data-tab="06">
-      06
-    </a>
-    
-    <a class="item" data-tab="07">
-      07
-    </a>
-    
-    <a class="item" data-tab="08">
-      08
-    </a>
-    
-    <a class="item" data-tab="Exercises">
-      Exercises
-    </a>
-    
-    <div class="item">
-      
+
+    <div class="ui fixed top pointing inverted stackable menu labmenu">
+      <header class="header item">
+        <i id="toc" class="sitemap icon"></i>
+        <a href="../index.html">
+          Week 9: Glitch: Sessions 
+        </a>
+      </header>
+      <div class="right tab-menu menu">
+        
+          <a class="item" data-tab="Lab-9 Glitch Sessions">
+            Lab-9 Glitch Sessions
+          </a>
+        
+          <a class="item" data-tab="01">
+            01
+          </a>
+        
+          <a class="item" data-tab="02">
+            02
+          </a>
+        
+          <a class="item" data-tab="03">
+            03
+          </a>
+        
+          <a class="item" data-tab="04">
+            04
+          </a>
+        
+          <a class="item" data-tab="05">
+            05
+          </a>
+        
+          <a class="item" data-tab="06">
+            06
+          </a>
+        
+          <a class="item" data-tab="07">
+            07
+          </a>
+        
+          <a class="item" data-tab="08">
+            08
+          </a>
+        
+          <a class="item" data-tab="Exercises">
+            Exercises
+          </a>
+        
+        <div class="item">
+          
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="ui segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    <br><br>
-    
-      
-        <a class="item" href="../../topic-00-assignments/book-a-webmark-1/index.html">
-          Assignment One Solution
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-01-html&css/book-a/index.html">
-          Lab-01a Semantic UI
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-01-html&css/book-b/index.html">
-          Lab-01b Semantic UI
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-02-glitch-intro/book-00-glitch-intro/index.html">
-          Lab-2 Glitch Intro
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-03-js-intro/book-a-js-introduction/index.html">
-          Lab-3 JS Intro
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-04-app-controllers+views/book-a-glitch-playlist-1/index.html">
-          Lab-4 Glitch Playlist 1
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
-          Lab-5 Glitch Playlist 2
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-07-app-models/book-a-glitch-playlist-3/index.html">
-          Lab-7 Glitch Playlist 3
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
-          Lab-8 JS Arrays
-        </a>
-      
-    
-      
-        <a class="active item" href="../../topic-09-glitch-sessions/book-a-glitch-sessions/index.html">
-          Lab-9 Glitch Sessions
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
-          Lab-10a Cloudinary Setup
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-10-glitch-images/book-b-glitch-cloudinary/index.html">
-          Lab-10b glitch-picture-store
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-11-js-objects/book-a-js-objects/index.html">
-          Lab-11 JS Objects
-        </a>
-      
-    
-  </div>
-  <div class="pusher" tabindex="-1">
-    <div class="ui basic segment" id="labchat">
-      <br>
-      
-      <div  class="ui tab segment lab" data-tab="Lab-9 Glitch Sessions">
-        <h1>Objectives</h1>
+    <div class="ui segment pushable">
+      <div class="ui inverted labeled icon left inline vertical sidebar menu">
+        <br><br>
+        
+          
+            <a class="item" href="../../topic-00-assignments/book-a-webmark-1/index.html">
+              Assignment One Solution
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-html&css/book-a/index.html">
+              Lab-01a Semantic UI
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-html&css/book-b/index.html">
+              Lab-01b Semantic UI
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-glitch-intro/book-00-glitch-intro/index.html">
+              Lab-2 Glitch Intro
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-js-intro/book-a-js-introduction/index.html">
+              Lab-3 JS Intro
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-app-controllers+views/book-a-glitch-playlist-1/index.html">
+              Lab-4 Glitch Playlist 1
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
+              Lab-5 Glitch Playlist 2
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-07-app-models/book-a-glitch-playlist-3/index.html">
+              Lab-7 Glitch Playlist 3
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
+              Lab-8 JS Arrays
+            </a>
+          
+        
+          
+            <a class="active item" href="../../topic-09-glitch-sessions/book-a-glitch-sessions/index.html">
+              Lab-9 Glitch Sessions
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
+              Lab-10a Cloudinary Setup
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-10-glitch-images/book-b-glitch-cloudinary/index.html">
+              Lab-10b glitch-picture-store
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-11-js-objects/book-a-js-objects/index.html">
+              Lab-11 JS Objects
+            </a>
+          
+        
+      </div>
+      <div class="pusher" tabindex="-1">
+        <div class="ui basic segment" id="labchat">
+          <br>
+          
+            <div  class="ui tab segment lab" data-tab="Lab-9 Glitch Sessions">
+              <h1>Objectives</h1>
 <p>Introduce Sessions onto the Playlist application, enabling user accounts and cookie-based authentication.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="01">
-        <h1>Playlist Model</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="01">
+              <h1>Playlist Model</h1>
 <p>This lab is based on Playlist-3. This can be imported into a new Glitch project from <code>bmullally/playlist3-complete</code>.</p>
 <h2>models/playlist-store.js</h2>
 <p>If your project has any playlists in the json store, delete them now. Your store should look like this:</p>
@@ -281,10 +264,10 @@ body
 <p>This new method takes a userid, and will only fetch playlists belonging to the user with the specific id. We have not introduced the User model 
 yet - nor are we storing playlists with such an id. We will make these changes in this lab.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="02">
-        <h1>Cookie Parser</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="02">
+              <h1>Cookie Parser</h1>
 <p>We need to install a new library in our project - in the form of a library to manage browser based cookies. This requires 2 steps:</p>
 <h1>Update package.json</h1>
 <h2>package.json</h2>
@@ -337,10 +320,10 @@ const listener = app.listen(process.env.PORT || 4000, function () {
   logger.info(`Glitch-template-1 started on port ${listener.address().port}`);
 });</code></pre>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="03">
-        <h1>UserStore</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="03">
+              <h1>UserStore</h1>
 <p>Now we can introduce a new model:</p>
 <h2>models/user-store.js</h2>
 <pre><code>&#39;use strict&#39;;
@@ -392,10 +375,10 @@ module.exports = userStore;</code></pre>
 }</code></pre>
 <p>In the above we are pre-loading two users for test purposes.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="04">
-        <h1>Accounts views</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="04">
+              <h1>Accounts views</h1>
 <p>We need a suite of new views to support signup / login</p>
 <h2>views/index.hbs</h2>
 <pre><code>{{&gt; welcomemenu }}
@@ -478,10 +461,10 @@ module.exports = userStore;</code></pre>
   font-weight:bold;
 }</code></pre>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="05">
-        <h1>Accounts controller</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="05">
+              <h1>Accounts controller</h1>
 <p>This is a new controller to support these views:</p>
 <h2>controllers/accounts.js</h2>
 <pre><code>&#39;use strict&#39;;
@@ -544,10 +527,10 @@ const accounts = {
 
 module.exports = accounts;</code></pre>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="06">
-        <h1>Routes</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="06">
+              <h1>Routes</h1>
 <p>These new views+ controller  all require new routes:</p>
 <h2>routes.js</h2>
 <p>In particular, these specific routes:</p>
@@ -599,10 +582,10 @@ module.exports = router;</code></pre>
 <h3>login</h3>
 <p><img src="img/03.png" alt=""></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="07">
-        <h1>Dashboard</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="07">
+              <h1>Dashboard</h1>
 <p>Try the following now:</p>
 <ul>
 <li>Log in as &#39;homer@simpson&#39;, &#39;secret&#39;.</li>
@@ -706,10 +689,10 @@ available to the dashboard and the full name is displayed on each subsequent pag
   ]
 }</code></pre>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="08">
-        <h1>Revised controller/ *.js modules</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="08">
+              <h1>Revised controller/ *.js modules</h1>
 <p>The <code>about.js</code>, <code>start.js</code> and <code>playlist.js</code> modules also need to keep track of the logged in user, so we need to import the accounts module.
 So, into each module add the following statement (after or before the other <code>require</code> statement(s)):</p>
 <pre><code>const accounts = require (&#39;./accounts.js&#39;);</code></pre>
@@ -760,10 +743,10 @@ extract their full name.</p>
     else response.redirect(&#39;/&#39;);
   },</code></pre>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="Exercises">
-        <h1>Exercises</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="Exercises">
+              <h1>Exercises</h1>
 <h2>Exercise 1</h2>
 <p>Test the application more comprehensively - signing up a range of users, and creating playlists. Make sure the users only see the playlists they have created.</p>
 <h2>Exercise 2</h2>
@@ -785,25 +768,14 @@ extract their full name.</p>
 <p>Using this lab as a guide - see if you can introduce sessions into your own webmark.</p>
 <p>You should still have your own webmark assignment. Try the same now - bringing in the sessions feature into your solution.</p>
 
+            </div>
+          
+        </div>
       </div>
-     
     </div>
-  </div>
-</div>
-<!--<div class="ui bottom fixed borderless right menu">
-  <div class="ui right tiny menu">
-    <div class="ui mini message segment">
-      .
-      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
-         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-         target="_blank">Creative Commons License
-      </a>
-    </div>
-  </div>
-</div>-->
 
-<script>
-  $(document).on('keydown', function(e) {
+    <script>
+      $(document).on('keydown', function(e) {
   e = e || window.event;
   var nextTab;
   switch (e.which || e.keyCode) {
@@ -823,14 +795,6 @@ extract their full name.</p>
   }
 });
 
-</script>
-
-
-
-    <!--<footer>-->
-
-    <!--</footer>-->
-    <script>
       $(document).ready(function() {
   $('img').addClass('ui image');
 
@@ -866,5 +830,4 @@ extract their full name.</p>
 
     </script>
   </body>
-
- </html>
+</html>

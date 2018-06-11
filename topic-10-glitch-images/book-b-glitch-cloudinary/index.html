@@ -1,32 +1,22 @@
- <!DOCTYPE html>
- <html>
-   <head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
 
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-     
-
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
-
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-     <script>hljs.initHighlightingOnLoad();</script>
-
-     
-
-     <style>
-       
-
-body 
+body
 {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
 }
@@ -48,18 +38,6 @@ figcaption
   padding: 1rem 0;
   overflow: visible;
 }
-
-
-
-     </style>
-
-   </head>
-
-  <body>
-    
-
-<style>
-  
 
 code
 {
@@ -111,154 +89,159 @@ body
 
 
 
-</style>
+    </style>
+  </head>
 
-<div class="ui fixed top pointing inverted stackable menu labmenu">
-  <header class="header item">
-    <i id="toc" class="sitemap icon"></i>
-    <a href="../index.html">
-      Week 10: Glitch: Images 
-    </a>
-  </header>
-  <div class="right tab-menu menu">
+  <body>
     
-    <a class="item" data-tab="Lab-10b glitch-picture-store">
-      Lab-10b glitch-picture-store
-    </a>
     
-    <a class="item" data-tab="01">
-      01
-    </a>
-    
-    <a class="item" data-tab="02">
-      02
-    </a>
-    
-    <a class="item" data-tab="03">
-      03
-    </a>
-    
-    <a class="item" data-tab="04">
-      04
-    </a>
-    
-    <a class="item" data-tab="05">
-      05
-    </a>
-    
-    <a class="item" data-tab="06">
-      06
-    </a>
-    
-    <a class="item" data-tab="07">
-      07
-    </a>
-    
-    <a class="item" data-tab="Exercises">
-      Exercises
-    </a>
-    
-    <div class="item">
-      
+
+    <div class="ui fixed top pointing inverted stackable menu labmenu">
+      <header class="header item">
+        <i id="toc" class="sitemap icon"></i>
+        <a href="../index.html">
+          Week 10: Glitch: Images 
+        </a>
+      </header>
+      <div class="right tab-menu menu">
+        
+          <a class="item" data-tab="Lab-10b glitch-picture-store">
+            Lab-10b glitch-picture-store
+          </a>
+        
+          <a class="item" data-tab="01">
+            01
+          </a>
+        
+          <a class="item" data-tab="02">
+            02
+          </a>
+        
+          <a class="item" data-tab="03">
+            03
+          </a>
+        
+          <a class="item" data-tab="04">
+            04
+          </a>
+        
+          <a class="item" data-tab="05">
+            05
+          </a>
+        
+          <a class="item" data-tab="06">
+            06
+          </a>
+        
+          <a class="item" data-tab="07">
+            07
+          </a>
+        
+          <a class="item" data-tab="Exercises">
+            Exercises
+          </a>
+        
+        <div class="item">
+          
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="ui segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    <br><br>
-    
-      
-        <a class="item" href="../../topic-00-assignments/book-a-webmark-1/index.html">
-          Assignment One Solution
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-01-html&css/book-a/index.html">
-          Lab-01a Semantic UI
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-01-html&css/book-b/index.html">
-          Lab-01b Semantic UI
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-02-glitch-intro/book-00-glitch-intro/index.html">
-          Lab-2 Glitch Intro
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-03-js-intro/book-a-js-introduction/index.html">
-          Lab-3 JS Intro
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-04-app-controllers+views/book-a-glitch-playlist-1/index.html">
-          Lab-4 Glitch Playlist 1
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
-          Lab-5 Glitch Playlist 2
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-07-app-models/book-a-glitch-playlist-3/index.html">
-          Lab-7 Glitch Playlist 3
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
-          Lab-8 JS Arrays
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-09-glitch-sessions/book-a-glitch-sessions/index.html">
-          Lab-9 Glitch Sessions
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
-          Lab-10a Cloudinary Setup
-        </a>
-      
-    
-      
-        <a class="active item" href="../../topic-10-glitch-images/book-b-glitch-cloudinary/index.html">
-          Lab-10b glitch-picture-store
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-11-js-objects/book-a-js-objects/index.html">
-          Lab-11 JS Objects
-        </a>
-      
-    
-  </div>
-  <div class="pusher" tabindex="-1">
-    <div class="ui basic segment" id="labchat">
-      <br>
-      
-      <div  class="ui tab segment lab" data-tab="Lab-10b glitch-picture-store">
-        <h1>Objectives</h1>
+    <div class="ui segment pushable">
+      <div class="ui inverted labeled icon left inline vertical sidebar menu">
+        <br><br>
+        
+          
+            <a class="item" href="../../topic-00-assignments/book-a-webmark-1/index.html">
+              Assignment One Solution
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-html&css/book-a/index.html">
+              Lab-01a Semantic UI
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-html&css/book-b/index.html">
+              Lab-01b Semantic UI
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-glitch-intro/book-00-glitch-intro/index.html">
+              Lab-2 Glitch Intro
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-js-intro/book-a-js-introduction/index.html">
+              Lab-3 JS Intro
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-04-app-controllers+views/book-a-glitch-playlist-1/index.html">
+              Lab-4 Glitch Playlist 1
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
+              Lab-5 Glitch Playlist 2
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-07-app-models/book-a-glitch-playlist-3/index.html">
+              Lab-7 Glitch Playlist 3
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
+              Lab-8 JS Arrays
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-09-glitch-sessions/book-a-glitch-sessions/index.html">
+              Lab-9 Glitch Sessions
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
+              Lab-10a Cloudinary Setup
+            </a>
+          
+        
+          
+            <a class="active item" href="../../topic-10-glitch-images/book-b-glitch-cloudinary/index.html">
+              Lab-10b glitch-picture-store
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-11-js-objects/book-a-js-objects/index.html">
+              Lab-11 JS Objects
+            </a>
+          
+        
+      </div>
+      <div class="pusher" tabindex="-1">
+        <div class="ui basic segment" id="labchat">
+          <br>
+          
+            <div  class="ui tab segment lab" data-tab="Lab-10b glitch-picture-store">
+              <h1>Objectives</h1>
 <p>Build an application the can facilitate upload and display of images in Glitch.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="01">
-        <h1>Setup</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="01">
+              <h1>Setup</h1>
 <p>In Glitch, create a new project and then import this repository to replace the default content:</p>
 <ul>
 <li><a href="https://github.com/rbirney/glitch-template-2" target="_blank">github.com/rbirney/glitch-template-2</a></li>
@@ -268,10 +251,10 @@ body
 <p>There are already two accounts pre-loaded (Homer and Marge). Try these out - and also try registering a new user.</p>
 <p>Review the source - it should be familiar from earlier labs.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="02">
-        <h1>Express Libraries</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="02">
+              <h1>Express Libraries</h1>
 <h2>package.json</h2>
 <p>We need to add some modules to our application to support image upload and the cloudinary API. These are included in the <code>package.json</code> file like this:</p>
 <pre><code>...
@@ -336,10 +319,10 @@ const listener = app.listen(process.env.PORT || 4000, function () {
 });</code></pre>
 <p>Make sure the app starts without any errors and functions as expected.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="03">
-        <h1>The Picture Store</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="03">
+              <h1>The Picture Store</h1>
 <p>We will encapsulate our picture storage in a new module in the <code>models</code> folder called picture-store.js:</p>
 <h2>models/picture-store.js</h2>
 <pre><code>&#39;use strict&#39;;
@@ -442,10 +425,10 @@ module.exports = pictureStore;</code></pre>
 <p>Create a folder called &#39;.data&#39; - this will be private in Glitch. Then create a file called <code>.env.json</code> in that folder containing your credentials as shown.</p>
 <p>NB: It is very important to keep your credentials in the <code>.data</code> folder - as they will be hidden from any Glitch users who wish to remix your app</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="04">
-        <h1>Dashboard</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="04">
+              <h1>Dashboard</h1>
 <p>Here is a replacement for the Dashboard view:</p>
 <h2>views/dashboard.hbs</h2>
 <pre><code>{{&gt; menu id=&quot;dashboard&quot;}}
@@ -489,10 +472,10 @@ module.exports = pictureStore;</code></pre>
       &lt;form action=&quot;/dashboard/uploadpicture&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;
 ...</code></pre>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="05">
-        <h1>Picture Routes</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="05">
+              <h1>Picture Routes</h1>
 <p>We can bring in this new route now:</p>
 <h2>routes.js</h2>
 <pre><code>...
@@ -546,10 +529,10 @@ module.exports = dashboard;</code></pre>
 <p>Log in to your cloudinary account and see if the image is in your Media Library. Also, see if the image url corresponds with the &quot;img&quot; url in your picture-store.json file (if you can load it).</p>
 <p>Our pictures will not appear on our dashboard yet however (next steps).</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="06">
-        <h1>Displaying Pictures</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="06">
+              <h1>Displaying Pictures</h1>
 <p>To Display the pictures, replace the pictures segment on dashboard with this:</p>
 <pre><code>...
   &lt;section class=&quot;ui raised segment&quot;&gt;
@@ -595,10 +578,10 @@ module.exports = dashboard;</code></pre>
 <p>If we add a title to the picture when we upload, it should appear in the card:</p>
 <p><img src="img/04.png" alt=""></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="07">
-        <h1>Deleting Photos</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="07">
+              <h1>Deleting Photos</h1>
 <p>Finally, we can bring in controls to delete images, either individually for in bulk. First the new routes:</p>
 <h2>routes.js</h2>
 <pre><code>...
@@ -648,10 +631,10 @@ router.get(&#39;/dashboard/deletepicture&#39;, dashboard.deletePicture);
 &lt;/div&gt;</code></pre>
 <p>See if you can delete individual pictures now.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="Exercises">
-        <h1>Solution</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="Exercises">
+              <h1>Solution</h1>
 <p>This is the completed application:</p>
 <ul>
 <li><a href= "https://github.com/bmullally/glitch-image-store" target="_blank">github.com/bmullally/glitch-image-store</a></li>
@@ -676,25 +659,14 @@ router.get(&#39;/dashboard/deletepicture&#39;, dashboard.deletePicture);
   }
 }</code></pre>
 
+            </div>
+          
+        </div>
       </div>
-     
     </div>
-  </div>
-</div>
-<!--<div class="ui bottom fixed borderless right menu">
-  <div class="ui right tiny menu">
-    <div class="ui mini message segment">
-      .
-      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
-         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-         target="_blank">Creative Commons License
-      </a>
-    </div>
-  </div>
-</div>-->
 
-<script>
-  $(document).on('keydown', function(e) {
+    <script>
+      $(document).on('keydown', function(e) {
   e = e || window.event;
   var nextTab;
   switch (e.which || e.keyCode) {
@@ -714,14 +686,6 @@ router.get(&#39;/dashboard/deletepicture&#39;, dashboard.deletePicture);
   }
 });
 
-</script>
-
-
-
-    <!--<footer>-->
-
-    <!--</footer>-->
-    <script>
       $(document).ready(function() {
   $('img').addClass('ui image');
 
@@ -757,5 +721,4 @@ router.get(&#39;/dashboard/deletepicture&#39;, dashboard.deletePicture);
 
     </script>
   </body>
-
- </html>
+</html>

@@ -1,32 +1,22 @@
- <!DOCTYPE html>
- <html>
-   <head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      
 
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-     
-
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
-
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-     <script>hljs.initHighlightingOnLoad();</script>
-
-     
-
-     <style>
-       
-
-body 
+body
 {
   font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
 }
@@ -48,18 +38,6 @@ figcaption
   padding: 1rem 0;
   overflow: visible;
 }
-
-
-
-     </style>
-
-   </head>
-
-  <body>
-    
-
-<style>
-  
 
 code
 {
@@ -111,148 +89,153 @@ body
 
 
 
-</style>
+    </style>
+  </head>
 
-<div class="ui fixed top pointing inverted stackable menu labmenu">
-  <header class="header item">
-    <i id="toc" class="sitemap icon"></i>
-    <a href="../index.html">
-      Week4: Glitch: Controllers + Views 
-    </a>
-  </header>
-  <div class="right tab-menu menu">
+  <body>
     
-    <a class="item" data-tab="Lab-4 Glitch Playlist 1">
-      Lab-4 Glitch Playlist 1
-    </a>
     
-    <a class="item" data-tab="01">
-      01
-    </a>
-    
-    <a class="item" data-tab="02">
-      02
-    </a>
-    
-    <a class="item" data-tab="03">
-      03
-    </a>
-    
-    <a class="item" data-tab="04">
-      04
-    </a>
-    
-    <a class="item" data-tab="05">
-      05
-    </a>
-    
-    <a class="item" data-tab="06">
-      06
-    </a>
-    
-    <a class="item" data-tab="07">
-      07
-    </a>
-    
-    <a class="item" data-tab="Exercises">
-      Exercises
-    </a>
-    
-    <div class="item">
-      
+
+    <div class="ui fixed top pointing inverted stackable menu labmenu">
+      <header class="header item">
+        <i id="toc" class="sitemap icon"></i>
+        <a href="../index.html">
+          Week4: Glitch: Controllers + Views 
+        </a>
+      </header>
+      <div class="right tab-menu menu">
+        
+          <a class="item" data-tab="Lab-4 Glitch Playlist 1">
+            Lab-4 Glitch Playlist 1
+          </a>
+        
+          <a class="item" data-tab="01">
+            01
+          </a>
+        
+          <a class="item" data-tab="02">
+            02
+          </a>
+        
+          <a class="item" data-tab="03">
+            03
+          </a>
+        
+          <a class="item" data-tab="04">
+            04
+          </a>
+        
+          <a class="item" data-tab="05">
+            05
+          </a>
+        
+          <a class="item" data-tab="06">
+            06
+          </a>
+        
+          <a class="item" data-tab="07">
+            07
+          </a>
+        
+          <a class="item" data-tab="Exercises">
+            Exercises
+          </a>
+        
+        <div class="item">
+          
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="ui segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    <br><br>
-    
-      
-        <a class="item" href="../../topic-00-assignments/book-a-webmark-1/index.html">
-          Assignment One Solution
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-01-html&css/book-a/index.html">
-          Lab-01a Semantic UI
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-01-html&css/book-b/index.html">
-          Lab-01b Semantic UI
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-02-glitch-intro/book-00-glitch-intro/index.html">
-          Lab-2 Glitch Intro
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-03-js-intro/book-a-js-introduction/index.html">
-          Lab-3 JS Intro
-        </a>
-      
-    
-      
-        <a class="active item" href="../../topic-04-app-controllers+views/book-a-glitch-playlist-1/index.html">
-          Lab-4 Glitch Playlist 1
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
-          Lab-5 Glitch Playlist 2
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-07-app-models/book-a-glitch-playlist-3/index.html">
-          Lab-7 Glitch Playlist 3
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
-          Lab-8 JS Arrays
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-09-glitch-sessions/book-a-glitch-sessions/index.html">
-          Lab-9 Glitch Sessions
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
-          Lab-10a Cloudinary Setup
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-10-glitch-images/book-b-glitch-cloudinary/index.html">
-          Lab-10b glitch-picture-store
-        </a>
-      
-    
-      
-        <a class="item" href="../../topic-11-js-objects/book-a-js-objects/index.html">
-          Lab-11 JS Objects
-        </a>
-      
-    
-  </div>
-  <div class="pusher" tabindex="-1">
-    <div class="ui basic segment" id="labchat">
-      <br>
-      
-      <div  class="ui tab segment lab" data-tab="Lab-4 Glitch Playlist 1">
-        <h1>Objectives</h1>
+    <div class="ui segment pushable">
+      <div class="ui inverted labeled icon left inline vertical sidebar menu">
+        <br><br>
+        
+          
+            <a class="item" href="../../topic-00-assignments/book-a-webmark-1/index.html">
+              Assignment One Solution
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-html&css/book-a/index.html">
+              Lab-01a Semantic UI
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-01-html&css/book-b/index.html">
+              Lab-01b Semantic UI
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-02-glitch-intro/book-00-glitch-intro/index.html">
+              Lab-2 Glitch Intro
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-03-js-intro/book-a-js-introduction/index.html">
+              Lab-3 JS Intro
+            </a>
+          
+        
+          
+            <a class="active item" href="../../topic-04-app-controllers+views/book-a-glitch-playlist-1/index.html">
+              Lab-4 Glitch Playlist 1
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-05-app-templates+views/book-a-glitch-playlist-2/index.html">
+              Lab-5 Glitch Playlist 2
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-07-app-models/book-a-glitch-playlist-3/index.html">
+              Lab-7 Glitch Playlist 3
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-08-js-arrays/book-a-js-arrays/index.html">
+              Lab-8 JS Arrays
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-09-glitch-sessions/book-a-glitch-sessions/index.html">
+              Lab-9 Glitch Sessions
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-10-glitch-images/book-a-setup/index.html">
+              Lab-10a Cloudinary Setup
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-10-glitch-images/book-b-glitch-cloudinary/index.html">
+              Lab-10b glitch-picture-store
+            </a>
+          
+        
+          
+            <a class="item" href="../../topic-11-js-objects/book-a-js-objects/index.html">
+              Lab-11 JS Objects
+            </a>
+          
+        
+      </div>
+      <div class="pusher" tabindex="-1">
+        <div class="ui basic segment" id="labchat">
+          <br>
+          
+            <div  class="ui tab segment lab" data-tab="Lab-4 Glitch Playlist 1">
+              <h1>Objectives</h1>
 <p>Import and run a new starter project. Extend this project to include multiple &#39;views&#39;. Explore the handlebars templating library.</p>
 <h2>Project Structure</h2>
 <ul>
@@ -273,10 +256,10 @@ body
 <li>load data from a JSON file and make it available to a javascript program.</li>
 </ul>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="01">
-        <h1>Template 1</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="01">
+              <h1>Template 1</h1>
 <p>Create a new project in Glitch - this will be a replica of the project created at the start of the last lab. Rename the project to your preference.</p>
 <p>Turn on the logs viewer, and then import a project from github:</p>
 <p><img src="img/01.png" alt=""></p>
@@ -288,10 +271,10 @@ body
 <img src="img/05.png" alt=""></p>
 <p><a href="https://github.com/bmullally/playlist1.git">https://github.com/bmullally/playlist1.git</a></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="02">
-        <h1>Playlist</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="02">
+              <h1>Playlist</h1>
 <p>We are going to evolve this project into a simple playlist maker, enabling a user to create a playlist of songs. In this step, we will layout a static version.</p>
 <p>First, we can make some simple changes to rebrand the app as <code>Playlist 1</code> instead of <code>Template 1</code></p>
 <p>First replace the existing corresponding lines of code with each of the following in the views:</p>
@@ -335,10 +318,10 @@ body
 ...</code></pre>
 <p>Make sure the app is still running, but with the new branding. If there are errors, turn the logs and you may be able to see the source of the problem - which will usually be some small error in the javascript sources.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="03">
-        <h1>Static Playlist</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="03">
+              <h1>Static Playlist</h1>
 <p>In this step we will start to display the playlist itself. First, replace <code>mainpanel.hbs</code> with a new partial called <code>listsongs.hbs</code>. 
 We will rename the <code>mainpanel.hbs</code> file to <strong>listsongs.hbs</strong>.</p>
 <p><img src="./img/10.png" alt=""></p>
@@ -420,10 +403,10 @@ We will rename the <code>mainpanel.hbs</code> file to <strong>listsongs.hbs</str
 ...</code></pre>
 <p>Error and debug messages may appear in red. You might need to open the <code>source</code> and <code>run</code> views of the app in side by side windows to get a clearer view of the logs.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="04">
-        <h1>Dynamic Playlist</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="04">
+              <h1>Dynamic Playlist</h1>
 <p>The app as we have it now could have been completely built as a static web site. However, the framework and tools we have used in this version enable us to evolve 
 this static site into an interactive app.</p>
 <p>The first step is to eliminate some of the static content from the songlist partial. Here is a new version to replace the current version (In listsongs.hbs replace the table with the following):</p>
@@ -511,10 +494,10 @@ index(request, response) {
 <p>You should see something like this in the logs:</p>
 <p><img src="img/07.png" alt=""></p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="05">
-        <h1>playlist-store</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="05">
+              <h1>playlist-store</h1>
 <p>We would like to manage the playlists separately from the controller, so that we can eventually introduce multiple playlists.</p>
 <p>To prepare for this, create a new javascript module in the backend of your app call it <code>playlist-store.js</code> in a new <code>models</code> folder. In Glitch, you can enter a full path, including a new directory when adding a file:</p>
 <p><img src="img/08.png" alt=""></p>
@@ -564,10 +547,10 @@ const dashboard = {
 module.exports = dashboard;</code></pre>
 <p>Notice in the above that we are importing the sonatas from the playlist-store module. Otherwise, the dashboard is unchanged.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="06">
-        <h1>Multiple playlists</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="06">
+              <h1>Multiple playlists</h1>
 <p>Here is a new version of <code>playlist-store.js</code>:</p>
 <h2>models/playlist-store.js</h2>
 <pre><code>&#39;use strict&#39;;
@@ -698,10 +681,10 @@ OR</li>
 <li>the title of a song</li>
 </ul>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="07">
-        <h1>Introducing JSON</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="07">
+              <h1>Introducing JSON</h1>
 <p>In javascript, it can sometimes be very convenient to use a notation to represent a data structure, but without any additional javascript constructs. Java Script Object Notation (JSON) is designed for this purpose. Here is a new file to represent our playlists in JSON format, create it for the backend of your app:</p>
 <h2>models/playlist-store.json</h2>
 <pre><code class="lang-js">{
@@ -753,10 +736,10 @@ const playlistCollection = require(&#39;./playlist-store.json&#39;).playlistColl
 module.exports = playlistCollection;</code></pre>
 <p>The program should behave exactly as before.</p>
 
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="Exercises">
-        <h1>Exercises &amp; Archives</h1>
+            </div>
+          
+            <div  class="ui tab segment lab" data-tab="Exercises">
+              <h1>Exercises &amp; Archives</h1>
 <p>If you want to download a complete version of the app as it should be at the end of this lab, then create a new Glitch project, and import <code>bmullally/playlist1-complete</code>.</p>
 <h2>Exercise 1: Review the JSON file format</h2>
 <p>Look again at the playlist as represented in:</p>
@@ -794,25 +777,14 @@ module.exports = playlistCollection;</code></pre>
 <h2>Exercise 6: Run Locally</h2>
 <p>Download the app and run it on your own workstation. Instructions for doing this are in the last lab.</p>
 
+            </div>
+          
+        </div>
       </div>
-     
     </div>
-  </div>
-</div>
-<!--<div class="ui bottom fixed borderless right menu">
-  <div class="ui right tiny menu">
-    <div class="ui mini message segment">
-      .
-      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
-         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-         target="_blank">Creative Commons License
-      </a>
-    </div>
-  </div>
-</div>-->
 
-<script>
-  $(document).on('keydown', function(e) {
+    <script>
+      $(document).on('keydown', function(e) {
   e = e || window.event;
   var nextTab;
   switch (e.which || e.keyCode) {
@@ -832,14 +804,6 @@ module.exports = playlistCollection;</code></pre>
   }
 });
 
-</script>
-
-
-
-    <!--<footer>-->
-
-    <!--</footer>-->
-    <script>
       $(document).ready(function() {
   $('img').addClass('ui image');
 
@@ -875,5 +839,4 @@ module.exports = playlistCollection;</code></pre>
 
     </script>
   </body>
-
- </html>
+</html>
